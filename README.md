@@ -1,8 +1,24 @@
 # Crowdfunding-ETL
-Helping Brita from Independent Funding with ETL of current company data
 
-8.3.4
-restructure the data to create the campaign DataFrame.
+## Overview of Project
+Helping Brita from Independent Funding move current company data into a PostgreSQL database. 
+
+### Purpose
+Independent Funding is a crowdfunding platform for funding independent projects or ventures. By moving the data to a Postgre database their analytics team will be able to perform analysis and generate reports for company stakeholders and doners.
+
+## Analysis and Challenges 
+
+### Extracting and transforming the data
+The data was reviewed in its orginal format, a single .xlsx file containing two worksheets. The data was imported with any needed dependinces to Juypter Notebook. The two sheets were used to create a total of four dataframes. The iterative process was used to clean the data. This included, spliting the column 'category & sub-category' into two individual columns. Creating category and subcategory LOOKUP tables. Sevreal columns were added to the campaign_df, and the epoch time was converted to ISO time. The iterative process was used again to split, convert, and extract the contact info and backer info respectivly. List comprehension was used instead of Regex do more familarity with the former.
+
+### Creating a PostgreSQL database, schema and ERD
+
+
+### Loading the CSV files into the database
+
+### Performing SQL queries to generate reports for stakeholders
+
+
 
 8.3.5
 The contacts_df DataFrame will contain the following columns, which all contain data from the contact_info worksheet:
@@ -27,3 +43,12 @@ create a new database in pgAdmin and create the tables by using the schema
 
 8.5.4
 load the data into a database. To do so, we'll use pgAdmin to import our saved CSV files.
+
+## Results
+
+# Stock-Analysis
+
+## Further Study
+Further study would be recommend on both of these stock options buy increasing the data size to 5 years.
+
+
